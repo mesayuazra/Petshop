@@ -17,6 +17,30 @@ def food():
 def accessories():
   return render_template('accessories.html')
 
+@app.route('/ClinicHome',methods=['GET','POST'])
+def clinicHome():
+  return render_template('clinicHome.html')
+
+@app.route('/MedicalRecords',methods=['GET','POST'])
+def medicalRecords():
+  return render_template('medicalRecords.html')
+
+@app.route('/HealthCareServices',methods=['GET','POST'])
+def HCServices():
+  return render_template('HCServices.html')
+
+@app.route('/BookingHealthcareServices',methods=['GET','POST'])
+def bookHCServices():
+  return render_template('BookHCServices.html')
+
+@app.route('/login',methods=['GET','POST'])
+def login():
+  return render_template('login.html')
+
+@app.route('/register',methods=['GET','POST'])
+def register():
+  return render_template('register.html')
+
 if __name__ == '__main__':
   #DEBUG is SET to TRUE. CHANGE FOR PROD
   app.run(port=5000,debug=True)
