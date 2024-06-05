@@ -1,37 +1,93 @@
-{% include 'navbar.html' %}
+<!-- <!DOCTYPE html>
+<html lang="en">
 
-<body class="text-center">
-    
-    <main class="form-signin w-100 m-auto">
-      <form>
-        <img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-    
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" fdprocessedid="38uswh">
-          <label for="floatingInput">Email address</label>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styleSign.css') }}">
+</head>
+
+<body>
+  <div class="container" style="margin-right: 0px; padding-right: 0px;">
+    <h2>Excited to try our features?</h2>
+    <img src="{{ url_for('static', filename='') }}" alt="Your Image">
+    <div class="login-form">
+      <form action="" method="">
+        <h2>Sign Up</h2>
+        <div class="form-floating mb-3 mt-5 input-container">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Username" required>
+          <label for="floatingInput">Username</label>
         </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" fdprocessedid="4fmxb">
+        <div class="form-floating mb-3 input-container">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
           <label for="floatingPassword">Password</label>
         </div>
-    
-        <div class="mb-3">
-            <p>Belum punya akun? <a href="/register">sini daftar terlebih dahulu</a></p>
-          </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit" fdprocessedid="34127c">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+        <div class="form-floating mb-5 input-container">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+          <label for="floatingPassword">Confirm Password</label>
+        </div>
+        <button type="submit" onclick="signUp()">Sign Up</button>
       </form>
-    </main>
-    
-    
-        
-      
-    
-    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+      <div class="signup-link">
+        Sudah punya akun? <a href="/signIn">Yuk login!</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 
 </body>
 
+</html> -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Login</h5>
+          </div>
+          <div class="card-body">
+            <form action="" method="post">
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+              </div>
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="card-footer">
+            <p>Belum punya akun? <a href="/register">Daftar di sini!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-{% include 'footer.html' %}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
