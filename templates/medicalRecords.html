@@ -1,0 +1,83 @@
+{% include 'navbar.html' %}
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Nama Pasien</h1>
+</div>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .placeholder {
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .pet-photo {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+
+        <!-- Informasi Hewan Peliharaan -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="placeholder">
+                    <img src="pet-photo.jpg" alt="Foto Hewan Peliharaan" class="pet-photo">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>Informasi Hewan Peliharaan</h2>
+                <p><strong>Nama:</strong> Buddy</p>
+                <p><strong>Spesies/Ras:</strong> Anjing / Golden Retriever</p>
+                <p><strong>Usia:</strong> 5 tahun</p>
+                <p><strong>Pemilik:</strong> John Doe</p>
+                <p><strong>Kontak:</strong> (123) 456-7890</p>
+            </div>
+        </div>
+
+        <!-- Riwayat Medis -->
+        <div>
+            <h2 class="section-title">Riwayat Medis</h2>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="placeholder">Catatan Vaksinasi</div>
+                    <div class="placeholder">Penyakit dan Perawatan Sebelumnya</div>
+                    <div class="placeholder">Operasi</div>
+                    <div class="placeholder">Obat-obatan</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Kesehatan Saat Ini -->
+        <div>
+            <h2 class="section-title">Status Kesehatan Saat Ini</h2>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="placeholder">Berat Badan</div>
+                    <div class="placeholder">Suhu</div>
+                    <div class="placeholder">Catatan Kesehatan Umum</div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+{% include 'footer.html' %}
