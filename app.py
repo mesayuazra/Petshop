@@ -17,6 +17,10 @@ def food():
 def accessories():
   return render_template('accessories.html')
 
+@app.route('/grooming',methods=['GET','POST'])
+def grooming():
+  return render_template('grooming.html')
+
 @app.route('/ClinicHome',methods=['GET','POST'])
 def clinicHome():
   return render_template('clinicHome.html')
